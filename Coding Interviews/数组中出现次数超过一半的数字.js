@@ -12,12 +12,11 @@ function MoreThanHalfNum_Solution(numbers){
          */
         if(index > mid){
             right = index - 1
-            index = partition(arr, left, right)
         }
         else{
             left = index + 1
-            index = partition(arr, left, right)
         }
+        index = partition(arr, left, right)
     }
     return checked(arr, arr[mid]) ? arr[mid] : 0
 }
