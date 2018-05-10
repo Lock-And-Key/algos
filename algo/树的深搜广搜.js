@@ -1,3 +1,4 @@
+/*
 void breadthFirstTravel(Node* root){
     queue<Node *> nodeQueue;  //使用C++的STL标准模板库
     nodeQueue.push(root);
@@ -15,22 +16,6 @@ void breadthFirstTravel(Node* root){
     }
 }
 
-var breadthFirstTravel = function (root) {
-    let queue = []
-    queue.push(root)
-    let node
-    while(node.length != 0){
-        node = queue.shift()
-        console.log(node.val)
-        if(node.left != null){
-            queue.push(node.left)
-        }
-        if(node.right != null){
-            queue.push(node.right)
-        }
-    }
-}
-
 void depthFirstTravel(Node* root){
     stack<Node *> nodeStack;  //使用C++的STL标准模板库
     nodeStack.push(root);
@@ -44,6 +29,24 @@ void depthFirstTravel(Node* root){
         }
         if(node->lchild){
             nodeStack.push(node->lchild);  //再将左子树压栈
+        }
+    }
+}
+
+*/
+
+var breadthFirstTravel = function (root) {
+    let queue = []
+    queue.push(root)
+    let node
+    while(node.length != 0){
+        node = queue.shift()
+        console.log(node.val)
+        if(node.left != null){
+            queue.push(node.left)
+        }
+        if(node.right != null){
+            queue.push(node.right)
         }
     }
 }
