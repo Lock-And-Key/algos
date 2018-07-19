@@ -16,21 +16,3 @@ var exchange = function(arr, a, b){
 
 
 log(Insertion([9,2,5,1,3,5,5,1,3,7,8]))
-
-class Model {
-    static logNameModel() {
-
-        console.log(this.name);
-    }
-}
-
-class User extends Model {
-    constructor() {
-        super()
-    }
-    static logNameUser() {
-        const cls = this.constructor
-        cls.logNameModel()
-    }
-}
-var u = new User()
